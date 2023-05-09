@@ -1,0 +1,11 @@
+.{
+    .name = "myapp",
+    .version = "0.0.1",
+
+    .dependencies = .{
+        .validate = .{
+            .url = "https://github.com/pfeiferj/zig-validate/archive/refs/tags/v0.1.0-alpha.tar.gz",
+            .hash = "12209b4f81b113fc0fde29f47eb92bb9ede19d8b7f693c76202348f89538f8ea7743",
+        }
+    }
+}
