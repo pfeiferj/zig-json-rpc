@@ -30,6 +30,10 @@ pub fn build(b: *std.Build) void {
     lib.linkLibrary(validate.artifact("zig-validate"));
     lib.addModule("validate", validate.module("validate"));
 
+    _ = b.addModule("json-rpc", .{
+        .source_file = .{ .path = "src/main.zig" },
+    });
+
     // This declares intent for the library to be installed into the standard
     // location when the user invokes the "install" step (the default step when
     // running `zig build`).
